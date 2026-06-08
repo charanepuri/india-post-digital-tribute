@@ -1,0 +1,269 @@
+{
+    "timeline": [
+        {
+            "id": 1,
+            "year": "1854",
+            "title": "Foundation of India Post",
+            "description": "India Post was established under a modern postal system, laying the foundation for organized communication across India."
+        },
+        {
+            "id": 2,
+            "year": "1911",
+            "title": "World's First Airmail",
+            "description": "India Post handled the first official airmail flight from Allahabad to Naini."
+        },
+        {
+            "id": 3,
+            "year": "1972",
+            "title": "PIN Code Introduced",
+            "description": "Postal Index Number system improved sorting and delivery efficiency."
+        },
+        {
+            "id": 4,
+            "year": "1986",
+            "title": "Speed Post Launch",
+            "description": "Fast and reliable express delivery service introduced across India."
+        },
+        {
+            "id": 5,
+            "year": "2018",
+            "title": "India Post Payments Bank",
+            "description": "Banking services expanded with IPPB to enhance financial inclusion."
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "category": "communication",
+            "title": "Mail Services",
+            "short": "Delivery of letters and documents.",
+            "description": "India Post delivers letters, postcards, inland mail, registered documents, and official communication across India."
+        },
+        {
+            "id": 2,
+            "category": "communication",
+            "title": "Speed Post",
+            "short": "Fast and reliable express delivery.",
+            "description": "Speed Post ensures time-bound delivery with tracking and nationwide reach."
+        },
+        {
+            "id": 3,
+            "category": "logistics",
+            "title": "Parcel Services",
+            "short": "Domestic & international parcel delivery.",
+            "description": "Supports e-commerce logistics and secure parcel transportation across India and abroad."
+        },
+        {
+            "id": 4,
+            "category": "finance",
+            "title": "Financial Services",
+            "short": "Savings and investment solutions.",
+            "description": "Provides savings accounts and government-backed schemes for secure financial planning."
+        },
+        {
+            "id": 5,
+            "category": "insurance",
+            "title": "Postal Life Insurance",
+            "short": "Affordable insurance coverage.",
+            "description": "PLI and RPLI offer trusted and government-backed life insurance services."
+        },
+        {
+            "id": 6,
+            "category": "banking",
+            "title": "India Post Payments Bank",
+            "short": "Doorstep banking services.",
+            "description": "Offers digital banking, money transfers, bill payments, and rural financial inclusion."
+        }
+    ],
+    "schemes": [
+        {
+            "id": 1,
+            "type": "savings",
+            "name": "Savings Account",
+            "description": "A secure and simple savings account for everyday banking needs."
+        },
+        {
+            "id": 2,
+            "type": "investment",
+            "name": "Recurring Deposit",
+            "description": "A disciplined monthly savings scheme for long-term growth."
+        },
+        {
+            "id": 3,
+            "type": "investment",
+            "name": "Time Deposit",
+            "description": "Fixed investment scheme offering safe and predictable returns."
+        },
+        {
+            "id": 4,
+            "type": "tax-saving",
+            "name": "Public Provident Fund (PPF)",
+            "description": "Long-term savings scheme with tax benefits and compounded growth."
+        },
+        {
+            "id": 5,
+            "type": "social",
+            "name": "Sukanya Samriddhi",
+            "description": "Savings scheme for securing the future of a girl child."
+        }
+    ],
+    "jobs": [
+        {
+            "id": 1,
+            "level": "entry",
+            "title": "Gramin Dak Sevak (GDS)",
+            "description": "Entry-level rural role handling mail delivery and postal services in villages."
+        },
+        {
+            "id": 2,
+            "level": "support",
+            "title": "Multi Tasking Staff (MTS)",
+            "description": "Handles office maintenance, file management, and operational support."
+        },
+        {
+            "id": 3,
+            "level": "field",
+            "title": "Postman / Mail Guard",
+            "description": "Responsible for delivering mail and managing postal movement."
+        },
+        {
+            "id": 4,
+            "level": "clerical",
+            "title": "Postal Assistant",
+            "description": "Handles customer services, savings accounts, and counter operations."
+        },
+        {
+            "id": 5,
+            "level": "operations",
+            "title": "Sorting Assistant",
+            "description": "Manages sorting and dispatch of letters and parcels."
+        },
+        {
+            "id": 6,
+            "level": "officer",
+            "title": "Inspector Posts",
+            "description": "Ensures service quality and monitors post office operations."
+        },
+        {
+            "id": 7,
+            "level": "management",
+            "title": "Assistant Superintendent (ASP)",
+            "description": "Supervises staff and supports postal administration."
+        },
+        {
+            "id": 8,
+            "level": "management",
+            "title": "Superintendent of Post Offices",
+            "description": "Manages postal divisions and operational performance."
+        },
+        {
+            "id": 9,
+            "level": "senior",
+            "title": "Postmaster General (PMG)",
+            "description": "Oversees regional postal operations within a circle."
+        },
+        {
+            "id": 10,
+            "level": "top",
+            "title": "Director General",
+            "description": "Highest authority responsible for national postal administration."
+        }
+    ],
+    "modern": [
+        {
+            "id": 1,
+            "category": "digital",
+            "title": "Digital Postal Services",
+            "short": "Online tracking and digital tools.",
+            "description": "Provides tracking, updates, and digital access to postal services."
+        },
+        {
+            "id": 2,
+            "category": "banking",
+            "title": "India Post Payments Bank",
+            "short": "Doorstep digital banking.",
+            "description": "Offers financial services including transfers, payments, and banking access."
+        },
+        {
+            "id": 3,
+            "category": "logistics",
+            "title": "E-Commerce Logistics",
+            "short": "Parcel delivery & logistics.",
+            "description": "Supports online businesses with efficient logistics and delivery."
+        },
+        {
+            "id": 4,
+            "category": "technology",
+            "title": "Core Banking",
+            "short": "Modern savings services.",
+            "description": "Enables digital transactions and improved banking convenience."
+        },
+        {
+            "id": 5,
+            "category": "services",
+            "title": "Doorstep Services",
+            "short": "Services at your home.",
+            "description": "Provides Aadhaar, banking, and public services directly to customers."
+        },
+        {
+            "id": 6,
+            "category": "technology",
+            "title": "Technology Operations",
+            "short": "Automation & tracking systems.",
+            "description": "Improves efficiency using automation, tracking, and modern systems."
+        }
+    ],
+    "uniquePostOffices": [
+        {
+            "id": 1,
+            "title": "Hikkim Post Office",
+            "image": "assets/images/HPO.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Floating Post Office, Srinagar",
+            "image": "assets/images/Floating Post Office.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Mumbai General Post Office (GPO)",
+            "image": "assets/images/Mumbai GPO.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Kolkata General Post Office (GPO)",
+            "image": "assets/images/Kolkata GPO.jpg"
+        },
+        {
+            "id": 5,
+            "title": "Shimla General Post Office",
+            "image": "assets/images/Shimla GPO.jpg"
+        }
+    ],
+    "videos": [
+        {
+            "id": 1,
+            "title": "India Post Services Overview",
+            "url": "https://www.indiapost.gov.in/media/videos?utm_source=chatgpt.com",
+            "thumbnail": "assets/images/post-office.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Inspiring Women of India Post",
+            "url": "https://youtu.be/rnJ15Dfygt0?si=9PnUajkOxM5HVOoA",
+            "thumbnail": "https://img.youtube.com/vi/rnJ15Dfygt0/hqdefault.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Exploring India’s Postal Legacy",
+            "url": "https://youtu.be/UATEtBx3sAw?si=yHiJw-0pOSUpAJn4",
+            "thumbnail": "https://img.youtube.com/vi/UATEtBx3sAw/hqdefault.jpg"
+        },
+        {
+            "id": 4,
+            "title": "India Post Goes to Antarctica",
+            "url": "https://youtu.be/J66uzDUfhzY?si=MOtNCR90kQlm3MWx",
+            "thumbnail": "https://img.youtube.com/vi/J66uzDUfhzY/hqdefault.jpg"
+        }
+    ]
+}

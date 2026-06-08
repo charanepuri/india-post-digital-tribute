@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=7">
+        <meta name="description" content="A digital tribute to India Post, showcasing its rich history, services, and impact on millions of lives across the country. Explore the legacy of trust and communication that has connected India for over 170 years." />
+        <meta name="keywords" content="India Post, Postal Services, Indian Postal History, Mail Delivery, Philately, Postal Savings, Postal Schemes, Post Offices in India, Postal Jobs, Unique Post Offices, Postal Gallery, Contact India Post" />
+        <meta name="author" content="Charan Teja EPURI" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>India Post - Digital Tribute</title>
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="icon" type="image/jpg" href="assets/icons/IndiaPost-DigitalTribute.jpg">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                darkMode: 'class',
+                theme: {
+                    screens: {
+                        'xs': '320px',
+                        'sm': '375px',
+                        'md-sm': '425px',
+                        'md': '768px',
+                        'lg': '1024px',
+                        'xl': '1440px',
+                        '2xl': '2560px',
+                    },
+                    extend: {}
+                }
+            }
+        </script>
+    </head>
+
+    <body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300 selection:bg-red-500 selection:text-white">
+
+        <header class="fixed w-full bg-white/70 dark:bg-gray-900/70 backdrop-blur-lg border-b border-gray-200 dark:border-gray-800 shadow-sm z-50 transition-colors duration-300">
+            <nav class="max-w-7xl mx-auto flex justify-between items-center p-4">
+                <a href="#" class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-500 pb-1">India Post</a>
+                <div class="flex items-center gap-6">
+                    <ul class="hidden md:flex gap-6 text-sm font-medium dark:text-gray-300">
+                        <li><a href="#about" class="hover:text-red-600 dark:hover:text-red-400 transition-colors">About</a></li>
+                        <li><a href="#history" class="hover:text-red-600 dark:hover:text-red-400 transition-colors">History</a></li>
+                        <li><a href="#services" class="hover:text-red-600 dark:hover:text-red-400 transition-colors">Services</a></li>
+                        <li><a href="#gallery" class="hover:text-red-600 dark:hover:text-red-400 transition-colors">Gallery</a></li>
+                        <li><a href="#videos" class="hover:text-red-600 dark:hover:text-red-400 transition-colors">Videos</a></li>
+                        <li><a href="#contact" class="hover:text-red-600 dark:hover:text-red-400 transition-colors">Contact</a></li>
+                    </ul>
+                    <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5 text-gray-500 dark:text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                    </button>
+                </div>
+            </nav>
+        </header>
+
+        <section class="h-screen flex items-center justify-center bg-cover bg-center"
+            style="background-image: url('assets/images/post-office.jpg');">
+
+            <div class="bg-black/50 p-8 rounded text-center text-white">
+                <h1 class="text-5xl font-bold mb-4">India Post</h1>
+                <p class="text-xl mb-2">The Lifeline of Communication in India</p>
+                <p class="mb-6 max-w-xl">
+                    Connecting people, delivering trust, and serving generations since 1854.
+                </p>
+
+                <div class="flex gap-4 justify-center">
+                    <button onclick="document.getElementById('about').scrollIntoView();" class="bg-white text-black px-6 py-2 rounded hover:bg-gray-200">Discover</button>
+                    <button onclick="document.getElementById('services').scrollIntoView();" class="bg-red-600 px-6 py-2 rounded hover:bg-red-700">Explore</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 max-w-5xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-4xl font-extrabold mb-6 dark:text-white" data-aos="fade-up">About India Post</h2>
+            <div class="text-lg leading-relaxed text-gray-700 dark:text-gray-300" data-aos="fade-up" data-aos-delay="100">
+                <p class="mb-4">
+                    India Post is one of the oldest and most trusted public service institutions in India, serving as the backbone of communication across the country for more than a century. Established in 1854, India Post has connected millions of people through letters, parcels, financial services, and life insurance, building trust in every corner of the nation.
+                </p>
+            </div>
+            <button id="read-more-btn" onclick="openAboutModal()" class="mt-6 bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-3 rounded-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                Read More
+            </button>
+        </section>
+
+        <section id="history" class="py-24 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+            <div class="max-w-5xl mx-auto px-4 text-center">
+                <h2 class="text-4xl font-extrabold mb-6 dark:text-white" data-aos="fade-up">History of India Post</h2>
+                <div class="text-lg leading-relaxed text-gray-700 dark:text-gray-300" data-aos="fade-up" data-aos-delay="100">
+                    <p>
+                        The history of India Post is the story of how communication evolved in India—from handwritten letters carried by foot messengers to one of the largest postal networks in the world. With roots stretching back centuries, India Post has grown into one of India’s most trusted public service institutions.
+                    </p>
+                </div>
+                <button onclick="openHistoryModal()" class="mt-8 bg-gradient-to-r from-red-600 to-red-700 text-white px-8 py-3 rounded-full hover:shadow-lg hover:-translate-y-1 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    Read More
+                </button>
+            </div>
+        </section>
+
+        <section class="py-24 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900">
+            <h2 class="text-4xl font-extrabold text-center mb-16 dark:text-white" data-aos="fade-up">History Timeline</h2>
+
+            <div id="timeline-container"
+                class="max-w-4xl mx-auto relative px-4">
+                <div class="absolute left-6 sm:left-[8.5rem] top-0 bottom-0 w-0.5 bg-gray-200 dark:bg-gray-700 rounded-full hidden sm:block"></div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 text-center">
+            <h2 class="text-4xl font-extrabold mb-12 dark:text-white" data-aos="fade-up">India Post by Numbers</h2>
+
+            <div class="grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-md p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm" data-aos="fade-up" data-aos-delay="0">
+                    <h3 class="counter text-4xl font-bold text-red-600" data-target="164999">0</h3>
+                    <p class="mt-2 font-medium dark:text-gray-300">Post Offices</p>
+                </div>
+                <div class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-md p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="counter text-4xl font-bold text-red-600" data-target="90">0</h3>
+                    <p class="mt-2 font-medium dark:text-gray-300">% Rural Coverage</p>
+                </div>
+                <div class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-md p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="counter text-4xl font-bold text-red-600" data-target="170">0</h3>
+                    <p class="mt-2 font-medium dark:text-gray-300">Years of Service</p>
+                </div>
+                <div class="bg-white/60 dark:bg-gray-800/60 backdrop-blur-md p-8 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="counter text-4xl font-bold text-red-600" data-target="149000">0</h3>
+                    <p class="mt-2 font-medium dark:text-gray-300">Rural Offices</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-24 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900">
+            <h2 class="text-4xl font-extrabold text-center mb-12 dark:text-white" data-aos="fade-up">Services</h2>
+            <div id="services-container"
+                class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+            </div>
+        </section>
+
+        <section class="py-24 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+            <h2 class="text-4xl font-extrabold text-center mb-12 dark:text-white" data-aos="fade-up">Savings & Schemes</h2>
+            <div id="schemes-container"
+                class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+            </div>
+        </section>
+
+        <section class="py-24 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900">
+            <h2 class="text-4xl font-extrabold text-center mb-12 dark:text-white" data-aos="fade-up">Job Hierarchy</h2>
+
+            <div id="job-container"
+                class="max-w-5xl mx-auto flex flex-wrap justify-center gap-4 px-4">
+            </div>
+        </section>
+
+        <section class="py-24 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+            <h2 class="text-4xl font-extrabold text-center mb-12 dark:text-white" data-aos="fade-up">Modern India Post</h2>
+
+            <div id="modern-container"
+                class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+            </div>
+        </section>
+
+        <section class="py-24 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900">
+            <h2 class="text-4xl font-extrabold text-center mb-6 dark:text-white" data-aos="fade-up">Unique Post Offices</h2>
+            <div class="max-w-4xl mx-auto text-center mb-12 px-4" data-aos="fade-up" data-aos-delay="100">
+                <p class="text-gray-700 dark:text-gray-300 text-lg">India Post is home to some of the most unique post offices in the world, each known for its remarkable location, history, or cultural significance. These post offices are more than service centers—they are symbols of India’s diversity, geography, and postal legacy.</p>
+            </div>
+
+            <div id="unique-container"
+                class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+            </div>
+
+            <div class="max-w-4xl mx-auto text-center mt-12 px-4" data-aos="fade-up">
+                <p class="text-gray-700 dark:text-gray-300 text-lg">These unique post offices reflect the extraordinary reach of India Post—from mountain peaks and floating waters to historic cities and remote islands—showcasing the unmatched diversity of India’s postal network.</p>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-24 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+            <h2 class="text-4xl font-extrabold text-center mb-12 dark:text-white" data-aos="fade-up">Gallery</h2>
+
+            <div class="swiper max-w-4xl mx-auto rounded-2xl shadow-2xl overflow-hidden border border-gray-200 dark:border-gray-700" data-aos="zoom-in" data-aos-delay="100">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/postman.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/postbox.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/stamp.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Commemorative Stamp.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Cultural Stamp.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Indian Heritage Stamp.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Mahatma Gandhi Stamp.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Rare & Special Stamps.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Rare & Special Stamps1.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Rare & Special Stamps2.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Rare & Special Stamps3.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Rare & Special Stamps4.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Rare & Special Stamps5.jpg" class="rounded"></div>
+                    <div class="swiper-slide"><img src="assets/images/Vintage Letter Box.jpg" class="rounded"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section id="videos" class="py-24 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900">
+            <h2 class="text-4xl font-extrabold text-center mb-12 dark:text-white" data-aos="fade-up">Voices of India Post</h2>
+
+            <div id="videos-container"
+                class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto px-4">
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+            <h2 class="text-4xl font-extrabold text-center mb-12 dark:text-white" data-aos="fade-up">Contact</h2>
+
+            <form action="https://formsubmit.co/charanepuri.teja@gmail.com"
+                method="POST" class="max-w-3xl mx-auto bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl border border-gray-200 dark:border-gray-700 p-8 rounded-2xl shadow-xl space-y-6" data-aos="fade-up" data-aos-delay="100">
+                <input type="text" name="name" placeholder="Full Name" required class="w-full p-4 border border-gray-200 dark:border-gray-700 rounded-xl bg-white/50 dark:bg-gray-900/50 dark:text-white focus:outline-none focus:ring-2 focus:ring-red-500 transition">
+                <input type="email" name="email" placeholder="Email Address" required class="w-full p-4 border border-gray-200 dark:border-gray-700 rounded-xl bg-white/50 dark:bg-gray-900/50 dark:text-white focus:outline-none focus:ring-2 focus:ring-red-500 transition">
+                <textarea name="message" placeholder="Message" required class="w-full p-4 border border-gray-200 dark:border-gray-700 rounded-xl bg-white/50 dark:bg-gray-900/50 dark:text-white focus:outline-none focus:ring-2 focus:ring-red-500 transition h-36"></textarea>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-red-600 to-red-700 text-white font-semibold text-lg px-6 py-4 rounded-xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+                    Send Message
+                </button>
+            </form>
+        </section>
+
+        <footer class="bg-gray-900 dark:bg-black text-white py-12 text-center border-t border-gray-800">
+            <p class="text-lg">India Post - A Legacy of Trust</p>
+            <p class="text-sm mt-2">Dedicated to my Father ❤️</p>
+            <div class="mt-8 border-t border-gray-800 pt-6 max-w-md mx-auto">
+                <p class="text-sm text-gray-400">Designed & Built by Charan Teja EPURI ❤️</p>
+                <p class="text-sm text-gray-400 mt-3 flex justify-center gap-4">
+                    <a href="https://portfolio-site-django.onrender.com" class="hover:text-white hover:-translate-y-0.5 transition-all" target="_blank">Django Portfolio</a>
+                    <a href="https://www.linkedin.com/in/charan-teja-972aa9231" class="hover:text-white hover:-translate-y-0.5 transition-all" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/charanepuri" class="hover:text-white hover:-translate-y-0.5 transition-all" target="_blank">GitHub</a>
+                    <a href="https://charan-react-portfolio.vercel.app" class="hover:text-white hover:-translate-y-0.5 transition-all" target="_blank">React Portfolio</a>
+                    <a href="https://www.instagram.com/_just_call_me_charan_tej" class="hover:text-white hover:-translate-y-0.5 transition-all" target="_blank">Instagram</a>
+                    <a href="https://www.snapchat.com/add/justcalltej2003?share_id=o3MYfXqlpYE&locale=en-IN" class="hover:text-white hover:-translate-y-0.5 transition-all" target="_blank">Snapchat</a>
+                </p>
+            </div>
+        </footer>
+
+        <div id="modal"
+            class="fixed inset-0 bg-black/60 backdrop-blur-sm hidden items-center justify-center z-[100] transition-opacity duration-300">
+            <div class="bg-white/95 dark:bg-gray-900/95 backdrop-blur-xl border border-gray-200 dark:border-gray-700 p-8 rounded-2xl shadow-2xl max-w-2xl w-full mx-4 relative transform transition-all duration-300 scale-95 opacity-0 flex flex-col max-h-[90vh]" id="modal-content-container">
+                <h3 id="modal-title" class="text-2xl font-bold mb-6 dark:text-white"></h3>
+                <div id="modal-content" class="dark:text-gray-300 overflow-y-auto pr-4"></div>
+                <button onclick="closeModal()"
+                    class="absolute top-4 right-4 text-gray-400 hover:text-red-600 dark:hover:text-red-400 transition bg-gray-100 dark:bg-gray-800 rounded-full w-8 h-8 flex items-center justify-center z-10 shadow">✕</button>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="scripts/app.js"></script>
+
+    </body>
+</html>
